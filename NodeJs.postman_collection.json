@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "c010fd62-b94a-405e-92ab-94672fc35686",
+		"name": "NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read One record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/alumno/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumno",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/alumnos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n_cuenta\": 9,\n    \"nombre\": \"registro a eliminar\",\n    \"edad\": 6,\n    \"genero\": \"M\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/alumno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Yiyo González Duque\",\n    \"edad\": 10,\n    \"genero\": \"M\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/alumno/80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumno",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/alumno/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumno",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/alumnos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read One record Teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/profesores/15438068",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"profesores",
+						"15438068"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create record Teacher",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMwYzU4YjMyNjhlNjA0ODA4MjU2ZDRkIiwiaWF0IjoxNjYyMTAwNzczLCJleHAiOjE2NjIxODcxNzN9.wGRm4aX8bizJsD458w11Ps8tpylwRkT_WAVJ0i7lZHE",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identificacion\": 43556778,\n    \"nombre\": \"Marina Villegas\",\n    \"edad\": 48,\n    \"genero\": \"F\",\n    \"especialidad\": \"Geografia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/profesor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"profesor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update record Teacher",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Yeison Fernando Jurado González\",\n    \"edad\": 38,\n    \"genero\": \"M\",\n    \"especialidad\": \"Backend\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/profesor/15438068",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"profesor",
+						"15438068"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete record  Teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3700/profesor/15438068",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"profesor",
+						"15438068"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n_cuenta\": 9,\n    \"nombre\": \"registro a eliminar\",\n    \"edad\": 6,\n    \"genero\": \"M\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/alumno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"alumno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n_cuenta\": 9,\n    \"nombre\": \"registro a eliminar\",\n    \"edad\": 6,\n    \"genero\": \"M\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3700/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3700",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
