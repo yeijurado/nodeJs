@@ -123,7 +123,7 @@ var controller = {
 
             });
 
-        console.log(user_info);
+        //console.log(user_info);
 
     },
 
